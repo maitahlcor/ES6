@@ -118,9 +118,10 @@ const cars = [
 
   function bmwSum(cars) {
     const filteredBMW = cars.filter((car) => car.brand === "BMW");    
-    const suma =0
-    filteredBMW.array.forEach(car => {
-      suma += car.price  
+    let suma =0
+    filteredBMW.forEach(car => {
+        suma += car.price
+        //console.log(car.price)
     });
     return  suma
   }
